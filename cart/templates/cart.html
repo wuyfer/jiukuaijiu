@@ -110,7 +110,7 @@
             url:'/cart/cart.html/',
             data:options,
             success:function (data) {
-                if(data.errorcode==200){
+                if(data.errorcode==200){ 
                     var price=parseFloat(price_node.text().substr(1))
                     var count=parseInt(count_node.val())
                     sum_price_node.text("￥"+(price*count).toFixed(2))
